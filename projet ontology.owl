@@ -1,0 +1,293 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/arthu/ontologies/2022/2/untitled-ontology-6"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/arthu/ontologies/2022/2/untitled-ontology-6">
+    <Prefix name="" IRI="http://www.semanticweb.org/arthu/ontologies/2022/2/untitled-ontology-6"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <Class IRI="#Ligne_RER"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Station"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#conducteur"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#passagé"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#personne"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#train"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Conduit"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#appartient"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#roule_sur"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#gare_id"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#nom"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Bourg_la_Reine"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Châtelet-les_Halles"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#John"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Kevin"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#RER_A"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#RER_B"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#RER_C"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#RER_D"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#RER_E"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#t1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#t2"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#conducteur"/>
+        <Class IRI="#personne"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#passagé"/>
+        <Class IRI="#personne"/>
+    </SubClassOf>
+    <ClassAssertion>
+        <Class IRI="#Station"/>
+        <NamedIndividual IRI="#Bourg_la_Reine"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Station"/>
+        <NamedIndividual IRI="#Châtelet-les_Halles"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#conducteur"/>
+        <NamedIndividual IRI="#John"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#passagé"/>
+        <NamedIndividual IRI="#Kevin"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Ligne_RER"/>
+        <NamedIndividual IRI="#RER_A"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Ligne_RER"/>
+        <NamedIndividual IRI="#RER_B"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Ligne_RER"/>
+        <NamedIndividual IRI="#RER_C"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Ligne_RER"/>
+        <NamedIndividual IRI="#RER_D"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Ligne_RER"/>
+        <NamedIndividual IRI="#RER_E"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#train"/>
+        <NamedIndividual IRI="#t1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#train"/>
+        <NamedIndividual IRI="#t2"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#appartient"/>
+        <NamedIndividual IRI="#Bourg_la_Reine"/>
+        <NamedIndividual IRI="#RER_B"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#appartient"/>
+        <NamedIndividual IRI="#Châtelet-les_Halles"/>
+        <NamedIndividual IRI="#RER_A"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#appartient"/>
+        <NamedIndividual IRI="#Châtelet-les_Halles"/>
+        <NamedIndividual IRI="#RER_B"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#appartient"/>
+        <NamedIndividual IRI="#Châtelet-les_Halles"/>
+        <NamedIndividual IRI="#RER_D"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Conduit"/>
+        <NamedIndividual IRI="#John"/>
+        <NamedIndividual IRI="#t1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Conduit"/>
+        <NamedIndividual IRI="#John"/>
+        <NamedIndividual IRI="#t2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#roule_sur"/>
+        <NamedIndividual IRI="#t1"/>
+        <NamedIndividual IRI="#RER_A"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#roule_sur"/>
+        <NamedIndividual IRI="#t2"/>
+        <NamedIndividual IRI="#RER_B"/>
+    </ObjectPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#gare_id"/>
+        <NamedIndividual IRI="#Bourg_la_Reine"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#unsignedLong">32</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nom"/>
+        <NamedIndividual IRI="#Bourg_la_Reine"/>
+        <Literal>Gare Bourg la Reine</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#gare_id"/>
+        <NamedIndividual IRI="#Châtelet-les_Halles"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#unsignedLong">132</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nom"/>
+        <NamedIndividual IRI="#Châtelet-les_Halles"/>
+        <Literal>Châtelet Les halles</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nom"/>
+        <NamedIndividual IRI="#John"/>
+        <Literal>John Smith</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nom"/>
+        <NamedIndividual IRI="#Kevin"/>
+        <Literal>Kevin Hearth</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nom"/>
+        <NamedIndividual IRI="#RER_A"/>
+        <Literal>Ligne A</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nom"/>
+        <NamedIndividual IRI="#RER_B"/>
+        <Literal>Ligne B</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nom"/>
+        <NamedIndividual IRI="#RER_C"/>
+        <Literal>Ligne C</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nom"/>
+        <NamedIndividual IRI="#RER_D"/>
+        <Literal>Ligne D</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nom"/>
+        <NamedIndividual IRI="#RER_E"/>
+        <Literal>Ligne E</Literal>
+    </DataPropertyAssertion>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#Conduit"/>
+        <Class IRI="#conducteur"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#appartient"/>
+        <Class IRI="#Station"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#roule_sur"/>
+        <Class IRI="#train"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#Conduit"/>
+        <Class IRI="#train"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#appartient"/>
+        <Class IRI="#Ligne_RER"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#roule_sur"/>
+        <Class IRI="#Ligne_RER"/>
+    </ObjectPropertyRange>
+    <DataPropertyDomain>
+        <DataProperty IRI="#gare_id"/>
+        <Class IRI="#Station"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#nom"/>
+        <Class IRI="#Ligne_RER"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#nom"/>
+        <Class IRI="#Station"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#nom"/>
+        <Class IRI="#conducteur"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#nom"/>
+        <Class IRI="#passagé"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+        <Class IRI="#Station"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#gare_id"/>
+        <Datatype abbreviatedIRI="xsd:long"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#nom"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+        <Datatype abbreviatedIRI="xsd:long"/>
+    </DataPropertyRange>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
